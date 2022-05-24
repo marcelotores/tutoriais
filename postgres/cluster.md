@@ -54,7 +54,7 @@ psql dbname < dumpfile
 > Antes de restaurar um dump SQL, todos os usuários que possuem objetos ou receberam permissões em objetos no banco de dados despejado já devem existir. Caso contrário, a restauração falhará ao recriar os objetos com a propriedade e/ou permissões originais. 
 > Perceba que o banco _dbname_ não é criado automaticamente, então voce deve criá-lo antes, assim como todos os bancos de dados dos quais fizer o dump.
 
-** dumpall**
+**dumpall**
 
 O pg_dumpall fará backup de todo o cluster. No entanto você deve criar manualmente cada banco de dados que faz parte do cluster. Outros objetos como usuários serão criado automaticamente.
 
