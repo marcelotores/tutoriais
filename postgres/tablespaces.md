@@ -1,4 +1,4 @@
-### Tablespace
+# Tablespace
 
 Tablespace permite que se defina locais no sistema de arquivos para representar os objetos do banco de dados
 (banco de dados, tabelas ...). Ou seja, você armazena seus objetos em outros locais diferentes do cluster.
@@ -7,7 +7,7 @@ Isso serve caso algum servidor de banco fique sem espaço e não seja possível 
 pode-se criar um no spacetable até mesmo em outro disco diferente.
 
  
-# exemplo de uso
+#### exemplo de uso
 
 CREATE TABLESPACE fastspace LOCATION '/ssd1/postgresql/data';
 
