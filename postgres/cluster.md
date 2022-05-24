@@ -16,4 +16,4 @@ pg_ctl -D clus1 initdb
 
 ```
 
-> O comando acima deve ser executado pelo usuário postgres.
+> Os comandos acima devem ser executados pelo usuário postgres.
