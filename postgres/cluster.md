@@ -68,7 +68,7 @@ pg_dumpall > dumpfile
 psql -f dumpfile postgres
 ```
 
-(É sempre necessário ter acesso de superusuário ao banco de dados ao restaurar um dump pg_dumpall)
+> É sempre necessário ter acesso de superusuário ao banco de dados ao restaurar um dump pg_dumpall
 
 ### Backup a Nível de Sistema de Arquivos
 
