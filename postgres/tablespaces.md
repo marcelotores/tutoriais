@@ -13,7 +13,7 @@ pode-se criar um no spacetable até mesmo em outro disco diferente.
 CREATE TABLESPACE fastspace LOCATION '/ssd1/postgresql/data';
 ```
 
-O tablespace acima é criado em '/ssd1/postgresql/data' que já deve ter sido criado anteriormente no sistema
+O tablespace acima é criado em _'/ssd1/postgresql/data'_ que já deve ter sido criado anteriormente no sistema
 de arquivos
 
 
