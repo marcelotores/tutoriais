@@ -37,6 +37,8 @@ Existem três tipos de backups no postgres
 
 #### SQL dump
 
+<!-- Escreva aqui -->
+
 #### Backup a Nível de Sistema de Arquivos
 
 Uma cópia do dos dados que pode ser feita utilizando qualquer ferramenta.
@@ -50,9 +52,9 @@ O servidor de banco de dados deve está parado. Não basta bloquear as próximas
 ##### Utilizando o rsync. 
 
 1. Primeiro faz `rsync` com o banco ativado.
-2. Após, faz `rxync –checksum` com o banco parado. O segundo rxync levará menos tempo, pois praticamente todos irão para lá com o primeiro `sync`. O checksum serve para o rsync fazer uma verificação cada vez que os arquivos tiverem o mesmo tamanho.
+2. Após, faz `rxync –checksum` com o banco parado. O segundo `rxync` levará menos tempo, pois praticamente todos irão para lá com o primeiro `sync`. O checksum serve para o `rsync` fazer uma verificação cada vez que os arquivos tiverem o mesmo tamanho.
  
          
 #### Arquivamento Contínuo
 
-
+<!-- Escreva aqui -->
