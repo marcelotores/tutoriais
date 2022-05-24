@@ -35,9 +35,9 @@ Existem três tipos de backups no postgres
 - Backup a Nível de Sistema de arquivo
 - Arquivamento Contínuo
 
-## SQL dump
+#### SQL dump
 
-## Backup a Nível de Sistema de Arquivos
+#### Backup a Nível de Sistema de Arquivos
 Uma cópia do dos dados que pode ser feita utilizando qualquer ferramenta.
 ex.: tar -cf backup.tar /usr/local/pgsql/data
 O servidor de banco de dados deve está parado
@@ -47,6 +47,6 @@ Primeiro faz rsync com o banco ativado.
 Após, faz rxync –checksum com o banco parado. O segundo rxync levará menos tempo, pois praticamente todos irão para lá com o primeiro sync. O checksum serve para o rsync fazer uma verificação cada vez que os arquivos tiverem o mesmo tamanho.
  
          
-## Arquivamento Contínuo
+#### Arquivamento Contínuo
 
 
