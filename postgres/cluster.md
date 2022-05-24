@@ -7,8 +7,11 @@ O cluster pode ser criado através da ferramenta `initdb` em `/usr/lib/postgresq
 ```
 /usr/lib/postgresql/13/bin/initdb -D /usr/local/pgsql/data
 
-## ou
+```
 
+ou 
+
+```
 pg_ctl -D clus1 initdb
 
 ```
