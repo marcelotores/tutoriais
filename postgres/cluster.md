@@ -1,6 +1,6 @@
 # Cluster
 
-### Criando um cluster
+## Criando um cluster
 
 O cluster pode ser criado através da ferramenta `initdb` em `/usr/lib/postgresql/13/bin/bin`.
 
@@ -18,7 +18,7 @@ Nos comandos acima, a opção `-D` especifica o local onde o cluster será criad
 
 > Os comandos acima devem ser executados pelo usuário postgres.
 
-### Iniciando um cluster
+## Iniciando um cluster
 
 O cluster pode ser iniciado por meio da ferramenta `pg_ctl` dentro de `/usr/lib/postgresql/13/bin/bin`.
 
@@ -27,7 +27,7 @@ O cluster pode ser iniciado por meio da ferramenta `pg_ctl` dentro de `/usr/lib/
 ```
 > o arquivo de log pode ser criado com o parâmetro `-l` em qualquer local.
 
-### Backup
+## Backup
 
 Existem três tipos de backups no postgres
 
@@ -35,7 +35,7 @@ Existem três tipos de backups no postgres
 - Backup a Nível de Sistema de arquivo
 - Arquivamento Contínuo
 
-#### SQL dump
+### SQL dump
 
 **dump**
 
@@ -56,7 +56,7 @@ psql dbname < dumpfile
 
 
 
-#### Backup a Nível de Sistema de Arquivos
+### Backup a Nível de Sistema de Arquivos
 
 Uma cópia do dos dados que pode ser feita utilizando qualquer ferramenta.
 
@@ -66,12 +66,12 @@ tar -cf backup.tar /usr/local/pgsql/data
 
 O servidor de banco de dados deve está parado. Não basta bloquear as próximas conexões, pois o buffers pode conter dados.
 
-##### Utilizando o rsync. 
+#### Utilizando o rsync. 
 
 1. Primeiro faz `rsync` com o banco ativado.
 2. Após, faz `rxync –checksum` com o banco parado. O segundo `rxync` levará menos tempo, pois praticamente todos irão para lá com o primeiro `sync`. O checksum serve para o `rsync` fazer uma verificação cada vez que os arquivos tiverem o mesmo tamanho.
  
          
-#### Arquivamento Contínuo
+### Arquivamento Contínuo
 
 <!-- Escreva aqui -->
