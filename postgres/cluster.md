@@ -37,7 +37,24 @@ Existem três tipos de backups no postgres
 
 #### SQL dump
 
-<!-- Escreva aqui -->
+**dump**
+
+```
+pg_dump dbname > dumpfile 
+```
+> O pg_dump faz backup apenas de banco, esquemas ou tabelas individuais. Para todo o cluster, use o pg_dumpall.
+
+**Restore**
+
+```
+createdb -T template0 dbname
+psql dbname < dumpfile 
+```
+
+> Antes de restaurar um dump SQL, todos os usuários que possuem objetos ou receberam permissões em objetos no banco de dados despejado já devem existir. Caso contrário, a restauração falhará ao recriar os objetos com a propriedade e/ou permissões originais. 
+> Perceba que o banco _dbname_ não é criado automaticamente, então voce deve criá-lo antes, assim como todos os bancos de dados dos quais fizer o dump.
+
+
 
 #### Backup a Nível de Sistema de Arquivos
 
