@@ -9,7 +9,9 @@ pode-se criar um no spacetable até mesmo em outro disco diferente.
  
 #### exemplo de uso
 
+```
 CREATE TABLESPACE fastspace LOCATION '/ssd1/postgresql/data';
+```
 
 O tablespace acima é criado em '/ssd1/postgresql/data' que já deve ter sido criado anteriormente no sistema
 de arquivos
